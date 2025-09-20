@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feliz día de la primavera — Flores amarillas</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1 id="main-title">Feliz día de la primavera 🌼</h1>
+    <button id="sprinkleBtn" class="btn">Regalar flores</button>
+    <div id="secondary" class="msg-secondary">Las flores amarillas que regala un informático</div>
+  </main>
+
+  <div class="flowers-layer" id="layer"></div>
+
+  <template id="flower-tpl">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <g transform="translate(32,32)">
+        <g fill="#F6C84C" stroke="#d9a93a" stroke-width="0.6">
+          <ellipse rx="6" ry="14" transform="rotate(0) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(45) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(90) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(135) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(180) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(225) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(270) translate(0,-18)"/>
+          <ellipse rx="6" ry="14" transform="rotate(315) translate(0,-18)"/>
+        </g>
+        <circle r="7" fill="#ffd94d" stroke="#d9a93a" stroke-width="0.8"/>
+      </g>
+    </svg>
+  </template>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
